@@ -1,0 +1,92 @@
+doctype html
+html
+  head
+    title Run docpad
+    //- script(src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous")
+    link(rel="stylesheet", href="styles/main.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", rel="stylesheet") 
+  body
+    header.header
+      a.logo(href="http://www.templatemonsterpreview.com/66480.html")
+        svg
+          rect
+            p.logo-text
+              |DEALSY
+      nav.nav-menu
+        ul.main-menu 
+          li: a.link-menu(href="#") Home
+            ul.menu-item
+              li: a(href="#") Deals V1 
+              li: a(href="#") Deals V2
+          li: a.link-menu(href="#") Coupons&Deals
+            ul.menu-item  
+              - var items = [{href:"#", name: 'Caterogy'}, {href:"#", name: 'Store'}, {href:"#", name: 'Store Single'}, {href:"#", name: 'Submit Coupon'}]
+                each item in items  
+                  li: a(href="#{item.href}")=item.name
+          li: a.link-menu(href="#") Blog
+          li: a.link-menu(href="#") Admin
+            ul.menu-item  
+              - var items = [{href:"#", name: 'Dashboard'}, {href:"#", name: 'Users Profile'}, {href:"#", name: 'Submit Coupon'}, {href:"#", name: ' Login'}]
+                each item in items  
+                  li: a(href=item.href)=item.name
+      a.search-box(href="#")
+        i.fa.fa-search(aria-hidden="true")
+          //- input.form-control(placeholder="Search..." type="text")
+          //- div.input-group-btn
+          //-   button.btn.btn-dafault(type="submit")
+          //-    i.fa
+
+    div.banner
+      h1
+        |Best Deals Coupons
+      p 
+        |We have 12569 offers from 6122 stores
+        br
+        |Start saving now
+      div.src-box
+        div.row
+          div.col-6
+            select.select-box
+              - var options = ['Browse By Catergory', 'Appearel', 'Books','Personal Care', 'Education', 'Beverage']
+                each option in options
+                  option #{option}
+          div.col-6
+            div.search
+              input.form-control(placeholder="search for store", type="text")
+              button.btn-search
+                |SEARCH
+    div.container
+      div.row
+        div.col-md-12
+          div.carousel.slide.multi-item-carousel#theCarousel
+            div.carousel-inner
+              div.item.active
+                div.col-xs-2
+                  a(href="#")
+                    img.img-responsive(src="http://themes.iamabdus.com/dealsy/1.0/img/category-slider/brand-logo-1.jpg")
+              div.item
+                div.col-xs-2
+                  a(href="#")
+                    img.img-responsive(src="http://themes.iamabdus.com/dealsy/1.0/img/category-slider/brand-logo-2.jpg")
+              div.item
+                div.col-xs-2
+                  a(href="#")
+                    img.img-responsive(src="http://themes.iamabdus.com/dealsy/1.0/img/category-slider/brand-logo-3.jpg")
+              div.item
+                div.col-xs-2
+                  a(href="#")
+                    img.img-responsive(src="http://themes.iamabdus.com/dealsy/1.0/img/category-slider/brand-logo-4.jpg")
+              div.item
+                div.col-xs-2
+                  a(href="#")
+                    img.img-responsive(src="http://themes.iamabdus.com/dealsy/1.0/img/category-slider/brand-logo-5.jpg")
+              div.item
+                div.col-xs-2
+                  a(href="#")
+                    img.img-responsive(src="http://themes.iamabdus.com/dealsy/1.0/img/category-slider/brand-logo-1.jpg")
+            a.left.carousel-control(href="#theCarousel" data-slide="prev")
+              i.fa.fa-angle-left(aria-hidden="true")
+            a.right.carousel-control(href="#theCarousel" data-slide="next")
+              i.fa.fa-angle-right(aria-hidden="true")
+    //- include ./../layouts/default.jade

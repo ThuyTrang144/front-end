@@ -1,0 +1,10 @@
+@import 'abstracts/variables';
+@import 'search';
+@import 'select-box';
+.src-box {
+  width: 83%;
+  background: $cl-header;
+  padding: 28px 18px 28px 18px;
+  border-radius: 3px;
+  margin: 0 85px;
+}

@@ -1,0 +1,17 @@
+@import 'abstracts/variables';
+// @import 'fonts/font-header';
+.search-box{
+  float: right;
+  margin: -80px 130px 0 0 ;
+  font-size: 15px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  color: #f95669;
+  border: 1px solid #f95669;
+  border-radius: 3px;
+  text-align: center;
+}
+// .fa-search::before {
+//   content: "\f002";
+// }

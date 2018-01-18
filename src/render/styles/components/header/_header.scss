@@ -1,0 +1,8 @@
+@import 'abstracts/variables';
+@import 'logo';
+@import 'nav-item';
+@import 'nav';
+@import 'search-box';
+.header {
+  background: $cl-bgr-header;
+}

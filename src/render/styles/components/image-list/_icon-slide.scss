@@ -1,0 +1,49 @@
+.left {
+  float: left;
+  font-size: 30px;
+  margin-top: -100px;
+  margin-left: 60px;
+}
+.right {
+  float: right;
+  font-size: 30px;
+  margin-top: -100px;
+  margin-right: 60px;
+}
+.multi-item-carousel{ 
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-16,67%;
+      }
+      &.right{
+        left:16,67%;
+      }
+    }
+    .next{
+      left: 16,67%;
+    }
+    .prev{
+      left: -16,67%;
+    }
+  }
+ 
+//   @media all and (transform-3d), (-webkit-transform-3d) {
+//   > .item{
+//     // use your favourite prefixer here
+//     transition: 500ms ease-in-out left;
+//     transition: 500ms ease-in-out all;
+//     backface-visibility: visible;
+//     transform: none!important;
+//   }
+// }
+// }
+// .carouse-control{
+// &.left, &.right{
+//   background-image: none;
+// }
+}
+

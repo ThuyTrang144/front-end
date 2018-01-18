@@ -1,0 +1,23 @@
+@import 'abstracts/variables';
+
+.nav-menu {
+  float: right;
+  margin-right: 200px;
+  margin-top: -100px;
+}   
+.nav-menu a {
+  text-decoration: none;
+  color: $cl-item;
+  display: block;
+}
+.nav-menu ul {
+  list-style-type: none;
+}
+.main-menu > li {
+  display: inline-block;
+  padding: 15px;
+  position: relative;
+}
+.main-menu li:hover .link-menu {
+  color: $cl-header;
+}

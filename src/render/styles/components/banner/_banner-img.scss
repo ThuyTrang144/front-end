@@ -1,0 +1,27 @@
+@import 'abstracts/mixin';
+@import 'abstracts/variables';
+// @import url(../static/images);
+.banner {
+  @include background('http://themes.iamabdus.com/dealsy/1.0/img/home/hero.png');
+  margin-top: -20px;
+}
+.banner h1 {
+  text-align: center;
+  // padding: 15px;
+  color: $cl-banner;
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  padding-top: 100px;
+}
+.banner p {
+  text-align: center;
+  color: $cl-banner;
+  font-family: "Lato",sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 30px;
+  letter-spacing: .05em;
+  position: relative;
+  top: -30px;
+}

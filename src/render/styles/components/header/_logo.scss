@@ -1,0 +1,36 @@
+@import 'abstracts/variables';
+
+.logo {
+  text-decoration: none;
+}
+.header svg {
+  height: 100px;
+  width: 250px;
+}
+.header rect {
+  x: 70;
+  y: 20;
+  height: 43px;
+  width: 150px;
+  fill: $cl-bgr-header;
+  stroke: $cl-header;
+  stroke-width: 2;
+}
+.logo-text {
+  margin-top: -80px;
+  margin-left: 80px;
+  color: $cl-header;
+  font-size: 32px;
+  font-weight: bold;  
+}
+
+.logo {
+  padding: 20px;
+  &__link { //(logo .logo__link)
+    text-decoration: none; 
+    // & dai dien cho logo
+  }
+  &__img {
+    margin: 20px;
+  }
+}
