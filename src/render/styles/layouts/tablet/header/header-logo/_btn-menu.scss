@@ -1,0 +1,16 @@
+@import '../../../mobile/header/header-logo/btn-menu';
+.btn-menu {
+    position: absolute;
+    background: black;
+    width: 140px;
+    height: 40px;
+    top: 25px;
+    &__text-menu {
+        display: inline;
+        color: $cl-btn-blue;
+        margin-right: 20px;
+    }
+}
+.icon-menu {
+    color: $cl-btn-blue;
+}
