@@ -1,3 +1,10 @@
+.container-img
+  img(src="./../images/email-icon.png")
+  a(href="#")  thuytrangnguyen565@gmail.com
+  img(src="./../images/phone-icon.png")
+  a(href="#")  +84 164 202 5253
+  img(src="./../images/skype-icon.png")
+  a(href="#") trangnguyen
 .container.container-header
   nav.navbar
     .container-fluid.container-nav
@@ -8,11 +15,12 @@
           span.btn-menu__text-menu MENU
           span.glyphicon.glyphicon-align-justify.icon-menu
       #navbar.collapse.navbar-menu
-        ul.nav.menu
+        ul.nav.navbar-above
           - var items = [{href:"#", name: 'Home'}, {href:"#", name: 'Page'}, {href:"#", name: 'Portfollio'}, {href:"#", name: 'Shop'}, {href:"#", name: 'Blog'}, {href:"#", name: 'Shortodes'}]
               each item in items
                 li: a(href="#{item.href}")=item.name
                   i.fa.fa-chevron-circle-down.icon-down(aria-hidden="true")
+                  i.fal.fa-angle-down
             li.dropdown
               a.dropdown-toggle(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false") Featured 
                 span.caret
@@ -26,8 +34,16 @@
                 - var items = [{href:"#", name: 'Sub Menu Level 2'}, {href:"#", name: 'Sub Menu Level 2'}, {href:"#", name: 'Sub Menu Level 2'}, {href:"#", name: 'Sub Menu Level 2'}]
                   each item in items
                     li.dropdown-item: a(href="#{item.href}")=item.name
-
-      
+        ul.nav.navbar-right.navbar-below
+          li: a(href="#") Email: thuytrangnguyen565@gmail.com
+          li: a(href="#") Phone: +84 164 202 5253
+          li: a(href="#") Skype: trangnguyen
+          li: a(href="#") Cart: [ 
+            span.number 2 
+            span ]items
+        i.fas.fa-search
+    
+         
       
         
 

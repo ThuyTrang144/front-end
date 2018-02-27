@@ -1,24 +1,26 @@
-.dropdown>ul {
+.dropdown > ul {
   width: 100%;
   border: none;
   -webkit-box-shadow: 0;
   box-shadow: 0;
   background: #eee;
-}
+  }
+
 .dropdown-item {
   margin-left: 60px;
   padding: 10px;
   list-style-image: url("../../images/favicon.ico");
-  &__title-item {
-    list-style-image: none;
-    margin-left: 40px;
-    padding: 20px 0;
-  }
 }
-.dropdown-menu>li>a{
-  padding: 0;
-}
-.dropdown-menu>.divider {
-  background: #fff;
+.dropdown-item__title-item {
+  list-style-image: none;
+  margin-left: 40px;
+  padding: 20px 0;
 }
 
+.dropdown-menu > li > a {
+  padding: 0;
+}
+
+.dropdown-menu > .divider {
+  background: #fff;
+}

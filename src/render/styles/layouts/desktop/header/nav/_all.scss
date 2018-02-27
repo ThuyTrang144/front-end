@@ -1,1 +1,10 @@
-@import "nav-item";
+.navbar-menu  {
+  display: block!important;
+  float: right;
+  margin: -50px 150px;
+}
+.navbar-below {
+  display: none;
+}
+@import 'nav-item';
+@import 'nav-icon';
