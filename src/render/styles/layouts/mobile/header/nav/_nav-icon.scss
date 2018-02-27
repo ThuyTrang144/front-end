@@ -1,0 +1,15 @@
+.fa-chevron-circle-down {
+    &.before {
+        content: "\f13a"
+    }
+}
+.icon-down {
+    font-size: 18px;
+    float: right;
+    color: $cl-gray;
+    background: $cl-white;
+}
+.nav-item .icon-up {
+    display: none;
+}
+
