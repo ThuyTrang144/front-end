@@ -1,0 +1,9 @@
+@media only screen and (min-width: 992px) {
+@import 'header/header-logo/all';
+@import 'header/icon-contact/all';
+@import 'header/nav/all';
+@import 'header/button-search/all';
+.container-nav {
+  margin-left: 100px;
+}
+}
